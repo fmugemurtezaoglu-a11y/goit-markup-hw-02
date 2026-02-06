@@ -1,16 +1,25 @@
+:root {
+  --primary-text: #434455;
+  --title-text: #2e2f42;
+  --white: #ffffff;
+  --light-bg: #f4f4fd;
+  --border-color: #e7e9fc;
+  --accent: #4d5ae5;
+  --accent-hover: #404bbf;
+}
 body {
-    /* C5-C7: Roboto only here, inherit elsewhere */
+  
     font-family: "Roboto", sans-serif;
-    /* C8: dominant text color */ 
+ 
     color: var(--primary-text);
     background-color: var(--white);
     }
-    /* reset helpers, but not repeating browser defaults too much (C14) */ 
+    
     h1,
     h2,
     h3,
     p {
-        marging: 0;
+        margin: 0;
     }
     ul{
         margin: 0;
@@ -32,7 +41,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
    }
-   /* Visually hidden heading for accessibility */ 
+
    .visually-hidden {
     position: absolute;
     width: 1px;
@@ -41,17 +50,17 @@ body {
     padding: 0;
     border: 0;
     overflow: hidden; 
-    clip: rect (0 0 0 0);
-    clip-path: inset (100%);
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
     white-space: nowrap;
    }
-   / * Header */
+   /* Header */
    .page-header{
     border-bottom: 1px solid var(--border-color);
    }
    .header-container {
     display: flex; 
-    aling-items: center;
+    align-items: center;
    }
    .logo {
     font-family: "Raleway" , sans-serif;
@@ -82,7 +91,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--title-text);
    }
-   /* C3: hover/focus active state */
+  
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-hover);
@@ -102,20 +111,19 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* C4: contacts hover/focus color change */
+
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-hover);
 }
 
-/* Hero */
+
 .hero {
   background-color: #2e2f42;
   padding: 188px 0;
   text-align: center;
 }
 .hero-container {
-  padding: 188px 0;
   text-align: center;
 }
 
@@ -144,13 +152,13 @@ body {
   cursor: pointer; /* C13 */
 }
 
-/* C3: button hover/focus state */
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-hover);
 }
 
-/* Sections */
+
 .features,
 .team,
 .portfolio {
@@ -180,13 +188,13 @@ body {
   cursor: pointer; /* C13 */
 }
 
-/* C3: button hover/focus state */
+
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-hover);
 }
 
-/* Sections */
+
 .features,
 .team,
 .portfolio {
@@ -203,7 +211,6 @@ body {
   font-weight: 700;
 }
 
-/* Features */
 .features-list {
   display: flex;
   gap: 24px;
@@ -228,7 +235,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Team */
+
 .team {
   background-color: var(--light-bg);
 }
@@ -264,7 +271,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-/* Portfolio */
+
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -284,7 +291,7 @@ body {
   padding: 32px 16px;
 }
 
-/* Footer */
+
 .page-footer {
   background-color: var(--title-text);
   padding: 100px 0;
